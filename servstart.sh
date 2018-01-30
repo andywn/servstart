@@ -1,5 +1,6 @@
 #!/bin/bash
 SSCRIPT_HOME=~/.sscript
+mkdir -p $SSCRIPT_HOME
 HASH=$(pwd | xargs md5 -qs)
 if [ $# -gt 0 ] && ([ $1 == '-d' ] || [ $1 == '--debug' ])
 then
